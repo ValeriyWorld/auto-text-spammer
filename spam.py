@@ -3,6 +3,8 @@ import time as t
 
 import pyautogui as pag
 
+from config.config import counter, spam_box
+
 
 # print string with delay after it
 def ready_steady_go(str, delay=1):
@@ -10,10 +12,7 @@ def ready_steady_go(str, delay=1):
     sys.stdout.flush()
     t.sleep(delay)
 
-# equals to how many times you want to spam the text
-counter = 10
-# type a text you want to spam
-spam_box = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...'
+# separate your text word by word
 list_spam_box = spam_box.split()
 
 print('Text spam begins in 5 seconds. Choose your target for spamming ' + \
